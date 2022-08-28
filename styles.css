@@ -1,16 +1,237 @@
-.img{
+*{
+   box-sizing: border-box; 
+}
+
+body{
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h1{font-size: 50px;}
+h2{font-size: 35px;}
+h3{font-size: 25px;}
+p{font-size: 15px;}
+
+button{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20 40;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5) ;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color:whitesmoke;
+    background-color: rgba(101, 101, 233, 0.89);
+}
+
+button:hover{
+    background-color: blueviolet ;
+}
+
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+
+.acentuar{
+color:gold;
+
+}
+
+header{
+    background-color: azure;
+}
+
+header .img{
+    margin: 0;
+    padding: 25px 30px;
+
+
+}
+
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color:gold;
+}
+
+#JUMBO{
     display: flex;
     align-items: center;
-    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 110vh;
+    color:whitesmoke;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ) 
+    ,url(/images/teatro-red.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#JUMBO h1{
     color: whitesmoke;
-  }
-  
-  .img{
-    height: 50px;
-    width: 100px;
-    margin-right: 50px;
-    padding-bottom: 5px;
-    padding-right: 100px;
-    padding-left: 100px;
-  
-  }
+}
+
+
+#ticketing .container{
+
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#caracteristicas{
+background-color:rgb(15, 15, 15);
+color:whitesmoke;
+text-align: center;
+
+}
+
+#caracteristicas .container{
+
+padding: 30px 12px;
+}
+
+#caracteristicas h2{
+
+margin-top: 0;
+font-size: 40px;
+
+}
+
+#caracteristicas p{
+
+    display: none;
+}
+
+#caracteristicas .headlights{
+
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.headlights:first-child{
+
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ) 
+    ,url(/images/mapa.jpg);
+
+}
+
+.headlights:nth-child(2){
+
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ) 
+    ,url(/images/ventas.jpg);
+
+}
+
+.headlights:nth-child(3){
+
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ) 
+    ,url(/images/pago.jpg);
+    
+}
+
+#servicios .container{
+
+text-align: center;
+padding: 200px 12px;
+
+}
+
+ul{
+    list-style: none;
+}
+
+#servicios li{
+
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+#agenda{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: rgb(15, 15, 15);
+color: whitesmoke;
+height: 50vh;
+
+}
+
+#agenda p{
+    font-size: 25px;
+}
+
+#agenda button{
+
+    font-size: 15px;
+}
+
+footer p{
+
+    margin: 0;
+    padding: 15px;
+    color: rgb(100, 100, 100);
+}
+
+footer .mailto{
+
+    margin: 0;
+    padding: 15px;
+    color: rgb(100, 100, 100);
+}
+
+footer.container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
