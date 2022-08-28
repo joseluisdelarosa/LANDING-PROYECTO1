@@ -42,9 +42,12 @@ header{
     background-color: azure;
 }
 
-header .img{
+header .logo{
     margin: 0;
     padding: 25px 30px;
+    font-weight: bold;
+    color:gold;
+    font-size: 35px;
 
 
 }
@@ -96,6 +99,15 @@ header a:hover{
 
 #JUMBO h1{
     color: whitesmoke;
+}
+
+#JUMBO h2{
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 20px;
+    color:whitesmoke;
+    font-size: 20px;
+    text-align: center;
 }
 
 
@@ -235,3 +247,37 @@ footer.container{
     align-items: flex-end;
 
 }
+
+/*
+@media (min-width 720px){
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    #ticketing .container{
+
+    }
+
+    #ticketing .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url(/images/taquilla.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+
+    }
+
+}
+
+    *-/
